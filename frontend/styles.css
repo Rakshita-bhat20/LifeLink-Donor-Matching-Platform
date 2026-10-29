@@ -70,3 +70,35 @@ td { padding: .55rem .5rem; border-bottom: 1px solid var(--line); vertical-align
 .hash { font-family: ui-monospace, Consolas, monospace; font-size: .74rem; color: var(--muted); }
 #toast { position: fixed; bottom: 1.2rem; left: 50%; transform: translateX(-50%); background: var(--ink); color: #fff; padding: .6rem 1.1rem; border-radius: 8px; opacity: 0; pointer-events: none; transition: opacity .2s; max-width: 90vw; }
 #toast.show { opacity: 1; } #toast.bad { background: var(--red); }
+/* --- High Contrast Text Fix for Tables and Cards --- */
+table td, table th {
+  color: #1a1a1a !important;
+}
+.card small, .muted {
+  color: #444444 !important;
+}
+.card h2, .card h3 {
+  color: #111111 !important;
+}
+table td small.muted {
+  color: #555555 !important;
+}
+/* --- High Contrast Fix for All Cards, Stats, and Charts --- */
+.stat b, .stat span {
+  color: #111111 !important;
+}
+.bars span, .bars div {
+  color: #111111 !important;
+}
+table td, table th {
+  color: #1a1a1a !important;
+}
+.card small, .muted {
+  color: #444444 !important;
+}
+.card h2, .card h3 {
+  color: #111111 !important;
+}
+.card {
+  color: #222222 !important;
+}

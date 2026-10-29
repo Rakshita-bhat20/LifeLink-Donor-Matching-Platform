@@ -23,7 +23,10 @@ class ApiTestCase(unittest.TestCase):
         self.client = self.app.test_client()
 
     def tearDown(self):
-        os.remove(self.path)
+        try:
+            os.remove(self.path)
+        except PermissionError:
+            pass
 
     # helpers
     def register(self, role, email=None, name="Tester"):
