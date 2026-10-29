@@ -2,8 +2,6 @@
 
 A three-tier web application that matches blood and organ requests from hospitals with
 registered donors, and explains every match.
-
-> Academic prototype for the course Building Enterprise Applications (BCS703B).
 > The medical rules are simplified. It is not a clinical system. Do not enter real patient data.
 
 ## What makes it different
